@@ -41,7 +41,7 @@ const ClickButton = ({
     >
       <Text
         className={classNames({
-          'text-lg font-bold text-center': true,
+          'text-3xl font-bold text-center': true,
           'text-white': theme === 'secondary' || theme === 'primary',
         })}
         {...textProps}

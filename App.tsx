@@ -13,11 +13,13 @@ export default function App() {
   }, [])
 
   return (
-    <View className='flex-1 bg-[#202020] px-2'>
+    <View className='flex-1 justify-end bg-[#202020] px-2'>
       <SafeAreaView>
-        <Text className='text-white'>
-          {parseFloat(state.currentValue).toLocaleString()}
-        </Text>
+        <View className='items-end pr-4 pb-4'>
+          <Text className='text-white text-6xl font-bold'>
+            {parseFloat(state.currentValue).toLocaleString()}
+          </Text>
+        </View>
 
         <Row>
           <ClickButton
