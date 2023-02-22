@@ -29,7 +29,7 @@ const App = () => {
           <ClickButton
             text='+/-'
             theme='secondary'
-            onPress={() => handleTap('posneg', '')}
+            onPress={() => handleTap('toggleSign', '')}
           />
           <ClickButton
             text='%'
