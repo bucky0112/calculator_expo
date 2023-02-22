@@ -1,10 +1,9 @@
-import { StatusBar } from 'expo-status-bar'
 import { useState, useCallback } from 'react'
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, Text, View } from 'react-native'
 import { ClickButton, Row } from './src/components'
 import calculator, { initialState, State } from './src/util/calculator'
 
-export default function App() {
+const App = () => {
   const [state, setState] = useState<State>(initialState)
 
   const handleTap = useCallback((type: string, value: string | number) => {
@@ -90,3 +89,5 @@ export default function App() {
     </View>
   )
 }
+
+export default App

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "marginLeft": -4,
+        "marginTop": -4,
+      },
+    ]
+  }
+/>
+`;

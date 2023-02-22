@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClickButton should render correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#333333",
+      "borderBottomLeftRadius": 9999,
+      "borderBottomRightRadius": 9999,
+      "borderTopLeftRadius": 9999,
+      "borderTopRightRadius": 9999,
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "height": 84,
+      "justifyContent": "center",
+      "marginBottom": 8,
+      "marginLeft": 8,
+      "marginRight": 8,
+      "marginTop": 8,
+      "opacity": 1,
+      "width": 84,
+    }
+  }
+  testID="click-button"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 30,
+          "lineHeight": 36,
+        },
+        Object {
+          "fontWeight": "700",
+        },
+        Object {
+          "textAlign": "center",
+        },
+        Object {
+          "color": "#fff",
+        },
+      ]
+    }
+  />
+</View>
+`;
