@@ -38,6 +38,7 @@ const ClickButton = ({
         'bg-accent-btn': theme === 'accent'
       })}
       {...rest}
+      testID='click-button'
     >
       <Text
         className={classNames({
