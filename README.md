@@ -11,5 +11,5 @@ This is a simple iOS style calculator app built using React Native. It is a simp
 
 ## Demo
 
-![android](https://i.imgur.com/yr99F9X.png)
-![ios](https://i.imgur.com/ZfEj9Xa.png)
+![android](https://user-images.githubusercontent.com/49245415/221334501-aba14e15-379a-48d7-b726-d2d5b7d1d75b.png)
+![ios](https://user-images.githubusercontent.com/49245415/221334517-d017e0f0-c18f-424b-a1c0-81d540f2daa3.png)
