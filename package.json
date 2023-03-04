@@ -19,6 +19,7 @@
     "classnames": "^2.3.2",
     "expo": "~47.0.12",
     "expo-build-properties": "~0.4.1",
+    "expo-dev-client": "~2.0.1",
     "expo-status-bar": "~1.4.2",
     "jest": "^26.6.3",
     "jest-expo": "^47.0.1",
