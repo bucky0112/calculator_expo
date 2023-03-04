@@ -1,10 +1,31 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { SafeAreaView, Text, View } from 'react-native'
+import mobileAds, {
+  AppOpenAd,
+  InterstitialAd,
+  RewardedAd,
+  BannerAd,
+  BannerAdSize,
+  TestIds
+} from 'react-native-google-mobile-ads'
 import { ClickButton, Row } from './src/components'
 import calculator, { initialState, State } from './src/util/calculator'
 
 const App = () => {
   const [state, setState] = useState<State>(initialState)
+
+  useEffect(() => {
+    mobileAds()
+      .initialize()
+      .then(() => {
+        // console.log('Google Mobile Ads SDK initialized!')
+        AppOpenAd.createForAdRequest(TestIds.APP_OPEN)
+
+        InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL)
+
+        RewardedAd.createForAdRequest(TestIds.REWARDED)
+      })
+  }, [])
 
   const handleTap = useCallback((type: string, value: string | number) => {
     const valueString = typeof value === 'number' ? String(value) : value
@@ -13,6 +34,7 @@ const App = () => {
 
   return (
     <View className='flex-1 justify-end bg-[#202020] px-2'>
+      <BannerAd unitId={TestIds.BANNER} size={BannerAdSize.BANNER} />
       <SafeAreaView>
         <View className='items-end pr-4 pb-4'>
           <Text className='text-white text-6xl font-bold'>
