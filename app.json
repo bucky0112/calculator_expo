@@ -2,7 +2,7 @@
   "expo": {
     "name": "calculator",
     "slug": "calculator",
-    "version": "1.0.0",
+    "version": "4.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.bucky0112.calculator"
@@ -26,7 +24,9 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.bucky0112.calculator"
+      "package": "com.bucky0112.calculator",
+      "permissions": ["com.google.android.gms.permission.AD_ID"],
+      "versionCode": 4
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -54,6 +54,6 @@
     ]
   },
   "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-4590079930387308~8443167425"
+    "android_app_id": ""
   }
 }
